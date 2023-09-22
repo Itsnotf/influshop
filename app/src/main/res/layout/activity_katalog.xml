@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroudblack_1"
     tools:context=".KatalogActivity">
 
     <LinearLayout
@@ -16,79 +17,32 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            android:backgroundTint="@color/ijoo"
-            android:layout_margin="15dp">
+            android:backgroundTint="@color/ijoo">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center"
-                android:gravity="center">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/foto_influencer_main"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/maudy"
-                    android:layout_gravity="center"
-                    android:padding="5dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/Image_banner"
+                    android:contentDescription="headerBanner"/>
 
-                <TextView
-                    android:id="@+id/nama_influ_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Mbak Maudy"
-                    android:textStyle="bold"
-                    android:textSize="25sp"
-                    android:textColor="@color/white"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="5dp"/>
-
-                <TextView
-                    android:id="@+id/bio_influ"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Deskripsi / Bio"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:textColor="@color/white"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="5dp"/>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_marginBottom="10dp">
-
-
-                    <ImageView
-                        android:id="@+id/facebook"
-                        android:layout_width="300px"
-                        android:layout_height="200px"
-                        android:src="@drawable/facebook"
-                        android:layout_margin="5dp" />
-                    <ImageView
-                        android:id="@+id/instagram"
-                        android:layout_width="300px"
-                        android:layout_height="180px"
-                        android:src="@drawable/instagram"
-                        android:layout_margin="5dp"/>
-                    <ImageView
-                        android:id="@+id/tiktok"
-                        android:layout_width="300px"
-                        android:layout_height="200px"
-                        android:src="@drawable/tiktok"
-                        android:layout_margin="5dp"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvKatalog"

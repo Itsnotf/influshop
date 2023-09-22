@@ -5,13 +5,14 @@
     android:contentDescription="scroll_view_wellcome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroudblack_1"
     tools:context=".loginActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@color/backgroudblack_1"
         android:layout_gravity="center"
         android:padding="15dp"
         android:orientation="vertical"
@@ -20,7 +21,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
+            android:background="@color/backgroudblack_1"
             android:layout_gravity="center"
             android:padding="15dp"
             android:orientation="vertical"
@@ -28,55 +29,72 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="WELCOME !"
+                android:text="@string/hello_sign"
                 android:textStyle="bold"
                 android:textSize="35sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/sub_sign"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:layout_marginTop="2dp"
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
         </LinearLayout>
 
         <EditText
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:hint="Username or Email"
             android:padding="12dp"
-            android:textSize="20sp"
-            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textColor="@color/white"
             android:inputType="text"
-            android:textColorHighlight="@color/black" />
+            android:textColorHighlight="@color/black"
+            android:background="@drawable/rouded_edittext"/>
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:textSize="20sp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
             android:hint="Password"
             android:inputType="textPassword"
             android:padding="12dp"
-            android:textColor="@color/black"
-            android:textColorHighlight="@color/black" />
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/black"
+            android:background="@drawable/rouded_edittext"/>
 
         <Button
             android:id="@+id/btLogin"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="LOG IN"
-            android:textSize="18sp"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#0097A7"/>
+            android:text="@string/sign_in"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button"/>
 
-        <Button
+
+        <TextView
             android:id="@+id/btDaftar"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="DAFTAR"
-            android:textSize="18sp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#0097A7"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="Belum punya akun? Daftar sini"
+            android:textColor="#007ACC"
+            android:clickable="true"
+            android:onClick="onClickText" />
+
 
     </LinearLayout>
 

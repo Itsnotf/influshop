@@ -10,14 +10,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/backgroudblack_1">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="235dp"
-            android:backgroundTint="@color/ijoo"
-            android:layout_margin="15dp"
+            android:backgroundTint="@color/greydark"
+            android:scaleType="fitXY"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" >
 
@@ -41,14 +42,16 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_gravity="center"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="@color/backgroudblack_1">
 
                 <TextView
                     android:id="@+id/etUsername"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cyborg"
-                    android:textSize="35sp"
+                    android:text="Faiz aflah hafizuddin"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
                     android:layout_below="@id/foto_profil"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="60dp"/>
@@ -57,8 +60,9 @@
                     android:id="@+id/etJabatan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CEO"
-                    android:textSize="15sp"
+                    android:text="Mahasiswa"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
                     android:layout_below="@id/foto_profil"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"/>
@@ -67,21 +71,25 @@
                     android:id="@+id/etNegara"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="in Indonesia"
-                    android:textSize="15sp"
+                    android:text="Politeknik Negeri Sriwijaya"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
                     android:layout_below="@id/foto_profil"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"/>
 
+
                 <Button
                     android:id="@+id/btLogout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
                     android:text="Log Out"
-                    android:textSize="20sp"
-                    android:backgroundTint="@color/ijoo"
+                    android:textSize="15sp"
+                    android:background="@drawable/rounded_button"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
                     />
 
             </LinearLayout>

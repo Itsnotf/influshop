@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroudblack_1"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".CartFragment">
 
@@ -20,17 +21,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:layout_gravity="center"
-                android:gravity="center"
+                android:padding="10dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="KERANJANG"
-                    android:textSize="30sp"
-                    android:textColor="@color/black"
+                    android:text="Keranjang"
+                    android:textSize="35sp"
+                    android:textColor="@color/white"
                     android:textStyle="bold"/>
 
             </LinearLayout>
@@ -39,21 +38,32 @@
                 android:id="@+id/rvCart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:listitem="@layout/isi_keranjang"
+                tools:listitem="@layout/isi_katalog"
                 android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/tv_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1000"
+                android:text="Total"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 1.797.000.00"
                 android:textSize="30sp"
-                android:textColor="@color/black"
-                android:textStyle="bold"/>
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"/>
 
             <Button
                 android:id="@+id/btnPayment"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Proceed to Payment"
                 android:layout_gravity="center"
@@ -61,7 +71,10 @@
                 android:textSize="20sp"
                 android:textColor="@color/white"
                 android:paddingStart="20dp"
-                android:paddingEnd="20dp"/>
+                android:paddingEnd="20dp"
+                android:background="@drawable/rounded_button"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
         </LinearLayout>
 
     </ScrollView>

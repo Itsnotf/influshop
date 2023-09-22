@@ -8,33 +8,35 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/ijoo">
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:orientation="horizontal"
             android:padding="10dp">
 
-            <de.hdodenhof.circleimageview.CircleImageView
+            <ImageView
                 android:id="@+id/foto_packet"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/maudy"/>
+                android:layout_width="150dp"
+                android:layout_height="135dp"
+                android:src="@drawable/image_product"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/post_feed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Post Feed 1x"
+                    android:text="Uniqlo Shirt"
                     android:textStyle="bold"
-                    android:textSize="18sp"
+                    android:textSize="25sp"
                     android:textColor="@android:color/black"
                     android:layout_marginLeft="5dp"/>
 
@@ -42,43 +44,39 @@
                     android:id="@+id/deskripsi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Deskripsi"
-                    android:textStyle="bold"
+                    android:text="Baju yang nyaman untuk digunakan di situasi apa pun dan kapan pun. "
+                    android:textStyle="normal"
                     android:textSize="15sp"
                     android:textColor="@android:color/black"
-                    android:layout_marginLeft="5dp"/>
+                    android:layout_marginLeft="5dp" />
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/uang"/>
 
                     <TextView
                         android:id="@+id/harga"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
                         android:text="Rp.2.000.000"
                         android:textStyle="bold"
-                        android:textSize="10sp"
+                        android:textSize="15sp"
                         android:textColor="@android:color/black"
-                        android:layout_marginLeft="5dp"/>
+                        android:layout_marginLeft="5dp" />
 
-                </LinearLayout>
+                    <Button
+                        android:id="@+id/tambahKeranjang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:text="CheckOut"
+                        android:textSize="10sp"/>
 
+                </RelativeLayout>
             </LinearLayout>
-
-            <ImageView
-                android:id="@+id/tambahKeranjang"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/tambah_keranjang"
-                android:layout_margin="5dp" />
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

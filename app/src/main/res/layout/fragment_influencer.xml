@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroudblack_1"
     tools:context=".InfluencerFragment">
 
     <ScrollView
@@ -15,65 +16,31 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:orientation="horizontal"
-                android:background="@color/ijoo">
+                android:text="My Shop"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="DASHBOARD"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:backgroundTint="@color/ijoo"
-                android:layout_margin="15dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="20dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="PILIH INFLUENCER YANG KAMU INGINKAN !"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:textColor="@color/white"
-                        android:textSize="25sp"/>
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/down"
-                        android:layout_gravity="center"/>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+                android:text="Temukan Pakaian yang anda impikan"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5.dp"
+                android:textColor="@color/white"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:listitem="@layout/isi_influencer"
-                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                app:spanCount="2"
+                tools:listitem="@layout/isi_katalog"
                 android:layout_gravity="center"/>
 
         </LinearLayout>

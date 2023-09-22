@@ -2,4 +2,9 @@
     <string name="app_name">influshop</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_sign">Selamat Datang</string>
+    <string name="sub_sign">Siap Melayani Kebutuhan Anda</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_first">Sign First</string>
+    <string name="choose_image">Choose Image</string>
 </resources>
