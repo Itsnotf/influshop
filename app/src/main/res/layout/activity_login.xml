@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:contentDescription="scroll_view_wellcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="WELCOME !"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username or Email"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:textColorHighlight="@color/black" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black" />
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="LOG IN"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#0097A7"/>
+
+        <Button
+            android:id="@+id/btDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="DAFTAR"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#0097A7"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Influencer"
+        android:id="@+id/menu_influ"
+        android:icon="@drawable/profile"/>
+    <item
+        android:title="Cart"
+        android:id="@+id/menu_cart"
+        android:icon="@drawable/cart"/>
+    <item
+        android:title="History"
+        android:id="@+id/menu_history"
+        android:icon="@drawable/history"/>
+    <item
+        android:title="Profile"
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/profile"/>
+
+</menu>

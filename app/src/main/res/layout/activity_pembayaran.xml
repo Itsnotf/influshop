@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PembayaranActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/etTotalHarga2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total : Rp. 60.000.000"
+                android:layout_marginTop="30dp"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/etPembayaranKeBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pembayaran Dapat di Transfer ke Bank :"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="left"
+
+                />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:checked="true"
+                    android:text="Bank BNI"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Pay Later"
+                    android:textSize="20sp"
+                    android:layout_marginTop="2dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btUnggahBuktiTf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#0097A7"
+            android:gravity="center"
+            android:text="Unggah Bukti Tf"
+            android:textSize="18sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivSelectedPayment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_gravity="center"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/btSimpanBuktiTf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#0097A7"
+            android:gravity="center"
+            android:text="SIMPAN"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
