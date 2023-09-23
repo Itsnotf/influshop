@@ -3,12 +3,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroudblack_1"
     tools:context=".PembayaranFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pembayaran"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total : 1.797.000.00"
+                android:textSize="30sp"
+                android:textStyle="normal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="80dp"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:id="@+id/etPembayaranKeBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pembayaran Dapat di Transfer ke Bank :"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="25dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="left"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:checked="true"
+                    android:text="Bank BNI"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="30dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Pay Later"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp" />
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/upload_bukti"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Unggah Bukti Pembayaran"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_button"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivBukti"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_gravity="center"
+                android:padding="5dp" />
+
+
+            <Button
+                android:id="@+id/simpan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Simpan"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rounded_button"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </FrameLayout>
