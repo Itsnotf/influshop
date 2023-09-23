@@ -4,37 +4,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroudblack_1"
-    tools:context=".HistoryFragment">
+    tools:context=".DetailPesanan">
 
-    <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Histori Pesanan"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Detail Pesanan"
                 android:textSize="35sp"
                 android:textStyle="bold"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="20dp"
                 android:textColor="@color/white"/>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvHistory"
+                android:id="@+id/rvDetail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:listitem="@layout/isi_katalog"
+                tools:listitem="@layout/isi_detail_order"
                 android:layout_gravity="center"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_button"
+                android:text="Selanjutnya"/>
 
         </LinearLayout>
 
     </ScrollView>
-
 </FrameLayout>

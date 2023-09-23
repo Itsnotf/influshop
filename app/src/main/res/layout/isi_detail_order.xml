@@ -1,62 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_margin="15dp"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="wrap_content">
+    android:layout_margin="15dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00BCD4">
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:orientation="horizontal"
-            android:layout_margin="10dp">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/foto_influ"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/maudy"
-                android:layout_gravity="center"
-                android:padding="5dp" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/etPostFeed"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Post Feed 1x"
-                    android:textStyle="bold"
-                    android:textSize="20sp"/>
-                <TextView
-                    android:id="@+id/etDescription"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Description"
-                    android:textSize="18sp"/>
+            android:padding="10dp">
 
-                <LinearLayout
+            <ImageView
+                android:id="@+id/foto_packet"
+                android:layout_width="150dp"
+                android:layout_height="135dp"
+                android:src="@drawable/image_product"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/post_feed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
+                    android:text="Uniqlo Shirt"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/deskripsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baju yang nyaman untuk digunakan di situasi apa pun dan kapan pun. "
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="5dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/etPrice"
-                        android:layout_width="match_parent"
+                        android:id="@+id/harga"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Price"
-                        android:textSize="20sp"
+                        android:layout_marginTop="15dp"
+                        android:text="Rp.2.000.000"
                         android:textStyle="bold"
-                        />
-                </LinearLayout>
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="5dp" />
+
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
